@@ -81,3 +81,16 @@ App::down(function()
 */
 
 require app_path().'/filters.php';
+
+/*
+|--------------------------------------------------------------------------
+| register Sentry manually inside the IoC container
+|--------------------------------------------------------------------------
+|
+| If you'd like to inject Sentry as a dependency you need to 
+| register Sentry manually inside the IoC container. 
+| Add $app['Cartalyst\Sentry\Sentry'] = $app['sentry']; 
+| to app/start/global.php.
+|
+*/
+$app['Cartalyst\Sentry\Sentry'] = $app['sentry'];
