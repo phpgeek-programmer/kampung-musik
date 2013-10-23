@@ -93,4 +93,4 @@ require app_path().'/filters.php';
 | to app/start/global.php.
 |
 */
-$app['Cartalyst\Sentry\Sentry'] = $app['sentry'];
+//$app['Cartalyst\Sentry\Sentry'] = $app['sentry'];
